@@ -1,0 +1,273 @@
+
+@import url("http://webdev.lincoln.ac.nz/Styles/Base.css");
+@import url("http://webdev.lincoln.ac.nz/Styles/Lincoln/Lincoln.css");
+
+body
+{
+	background:white;
+	margin: 0; 
+	padding: 0;
+	text-align: left;
+
+}
+
+
+
+#quals_container 
+{
+	margin:0;
+	padding:0;
+	text-align:left;
+	margin:0 auto;
+	text-align:centre;
+	width:888px;
+	height:auto;
+	background:white;
+}
+
+
+#quals_info
+{
+	height:auto;
+}
+
+#quals_faculty 
+{
+	text-align:left;
+	width:100%;
+	height:50px;
+	background:#D8BFD8;
+	
+}
+
+#quals_faculty div
+{		
+	float:left;
+	position:relative;
+	width:auto;
+	color:white;
+	left:20px;
+	top:10px;
+	font-size:25px;
+	/*font-family:Arial;*/
+	background:inherit;
+}
+
+#quals_banner
+{
+	text-align:left;
+	width:100%;
+	height:400px;
+	/*background:green;*/
+	/*background: url("images/quals_banner.png");*/
+}
+
+#quals_leftandright
+{
+	text-align:none;
+	width:100%;
+	height:auto;	
+
+}
+
+#quals_leftside
+{
+	/*background: red;*/
+	width:49%;
+	height:auto;
+	float:left;
+}
+
+#quals_rightside
+{
+	/*background: orange;*/
+	width:49%;
+	height:auto;
+	float:right;
+	
+}
+
+
+
+#majors
+{
+	height:auto;
+	/*background:red;*/
+}
+
+
+
+
+
+/*** STUDY YEAR PANEL MATRIX ***/
+
+.study_year
+{		
+	width:100%;
+	height:auto;
+	color:black;
+
+}
+
+
+.study_year_tags
+{	
+	float:left;
+	background: url("../images/year_tags.png");
+	width:35px;
+	height:155px;
+	
+}								
+
+#study_years 
+{
+	background: #B0C4DE;
+	height:155px;
+	width:434px;
+}
+
+.study_year 
+{
+	float:left;
+	width:99px;
+	height:25px;
+	text-align:center;
+	line-height:26px;
+}
+.study_year1 
+{		
+	background: #EEE8AA;	
+	margin-left: 1px;
+}	
+.study_year1b 
+{		
+	margin-top: 1px;
+	margin-left: 1px;
+	background: #EEE8AA;								
+}
+
+.study_year2 
+{		
+	background: #ADD8E6;
+	margin-top: 1px;
+	margin-left: 1px;
+}	
+.study_year2b 
+{		
+	margin-top: 1px;
+	margin-left: 1px;
+	background: #ADD8E6;
+	
+}
+
+
+.study_year3
+{		
+	background: #8FBC8F;
+	margin-top: 1px;
+	margin-left: 1px;
+}	
+.study_year3b 
+{		
+	margin-top: 1px;
+	margin-left: 1px;
+	background: #8FBC8F;
+}
+
+
+
+
+
+/*** LINK HOVER BEHAVIOUR ***/
+
+#study_years .study_year a
+{		
+	target:_blank;
+	line-height:22px;
+	color:black;
+	text-decoration:none;
+
+}
+
+#study_years .study_year_hover
+{		
+	target:_blank;
+	line-height:22px;
+	background:  #ECECEC;
+	color:#808080;
+	text-decoration:none;
+}
+
+.study_year_hover a
+{		
+	target:_blank;
+	line-height:22px;
+	background: #ECECEC;
+	color:#808080;
+	text-decoration:none;	
+}
+
+
+
+
+/*** FOOTER NAV BLOCKS ***/
+
+#footnav 
+{
+	/*background:blue;*/
+	float:left;
+
+}
+
+#footnav ul 
+{
+	/*background:red;*/
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+
+#footnav ul li 
+{
+	float: left;
+	padding-left: 1px;
+	padding-top: 1px;
+	position: relative;
+	background: #8FBF8F;
+}
+
+#footnav ul li a 
+{
+	background: #4AAA42;
+	width: 147px;
+	color:white;
+	
+	display:block;
+	font-size:1.2em;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	margin:0px;
+	padding:0px;
+	height: 26px;
+	text-align:center;
+	vertical-align:text-bottom;
+	text-decoration:none;
+	/*font-family:Verdana,sans-serif;*/
+	line-height:26px;
+	
+	
+}
+
+#footnav ul li.hover a
+{
+	background: #ECECEC;
+	color:#808080;
+	/*text-decoration:underline;*/
+}
+
+
