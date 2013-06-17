@@ -1,105 +1,13 @@
 
-@import url("http://webdev.lincoln.ac.nz/Styles/Base.css");
-@import url("http://webdev.lincoln.ac.nz/Styles/Lincoln/Lincoln.css");
-
-body
-{
-	background:white;
-	margin: 0; 
-	padding: 0;
-	text-align: left;
-
-}
-
-
-
-#quals_container 
-{
-	margin:0;
-	padding:0;
-	text-align:left;
-	margin:0 auto;
-	text-align:centre;
-	width:888px;
-	height:auto;
-	background:white;
-}
-
-
-#quals_info
-{
-	height:auto;
-}
-
-#quals_faculty 
-{
-	text-align:left;
-	width:100%;
-	height:50px;
-	background:#D8BFD8;
-	
-}
-
-#quals_faculty div
-{		
-	float:left;
-	position:relative;
-	width:auto;
-	color:white;
-	left:20px;
-	top:10px;
-	font-size:25px;
-	/*font-family:Arial;*/
-	background:inherit;
-}
-
-#quals_banner
-{
-	text-align:left;
-	width:100%;
-	height:400px;
-	/*background:green;*/
-	/*background: url("images/quals_banner.png");*/
-}
-
-#quals_leftandright
-{
-	text-align:none;
-	width:100%;
-	height:auto;	
-
-}
-
-#quals_leftside
-{
-	/*background: red;*/
-	width:49%;
-	height:auto;
-	float:left;
-}
-
-#quals_rightside
-{
-	/*background: orange;*/
-	width:49%;
-	height:auto;
-	float:right;
-	
-}
-
-
-
-#majors
-{
-	height:auto;
-	/*background:red;*/
-}
-
-
 
 
 
 /*** STUDY YEAR PANEL MATRIX ***/
+
+.quals_matrix
+{
+	width:500px;
+}
 
 .study_year
 {		
@@ -119,7 +27,7 @@ body
 	
 }								
 
-#study_years 
+.study_years 
 {
 	background: #B0C4DE;
 	height:155px;
@@ -180,7 +88,7 @@ body
 
 /*** LINK HOVER BEHAVIOUR ***/
 
-#study_years .study_year a
+.study_years .study_year a
 {		
 	target:_blank;
 	line-height:22px;
@@ -189,7 +97,7 @@ body
 
 }
 
-#study_years .study_year_hover
+.study_years .study_year_hover
 {		
 	target:_blank;
 	line-height:22px;
@@ -212,14 +120,15 @@ body
 
 /*** FOOTER NAV BLOCKS ***/
 
-#footnav 
+.footnav 
 {
 	/*background:blue;*/
-	float:left;
+	/*float:left;*/
+	width:888px;
 
 }
 
-#footnav ul 
+.footnav ul 
 {
 	/*background:red;*/
 	padding: 0px;
@@ -228,7 +137,7 @@ body
 }
 
 
-#footnav ul li 
+.footnav ul li 
 {
 	float: left;
 	padding-left: 1px;
@@ -237,7 +146,7 @@ body
 	background: #8FBF8F;
 }
 
-#footnav ul li a 
+.footnav ul li a 
 {
 	background: #4AAA42;
 	width: 147px;
@@ -263,7 +172,7 @@ body
 	
 }
 
-#footnav ul li.hover a
+.footnav ul li.hover a
 {
 	background: #ECECEC;
 	color:#808080;
