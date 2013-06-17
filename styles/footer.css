@@ -1,0 +1,71 @@
+﻿
+
+/*====================   FOOTER  ====================*/
+
+#footer {
+	clear: both;
+	background: #231f20 url(../images/gradient.gif) top left repeat-y;
+	border-bottom:7px solid #9DCCC4;
+	margin:0px 16px;
+}
+
+#footer ul 
+{
+	margin: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	list-style: none;
+	text-align: center;
+	
+}
+
+#footer ul 
+{
+    list-style: none;
+    text-align: center;
+}
+
+#footer ul li 
+{
+    display: inline;
+}
+
+#footer ul.first 
+{
+    border-bottom: solid 1px #212121;
+}
+
+#footer ul.last 
+{
+    border-top: solid 1px #656565;
+}
+
+ul, menu, dir 
+{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+#footer ul li a 
+{
+    color: white;
+    font-size: 1em;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0.8em 0.4em 0.8em 0.8em;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+	text-decoration: underline;
+}

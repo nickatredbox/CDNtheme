@@ -1,0 +1,71 @@
+﻿
+
+
+/*====================   BODY  ====================*/
+body {
+	background: #BEC3C6 url(../images/bg.jpg) repeat-x scroll 0 0;
+	font-size: 75%;
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-family: "Lucida Sans Unicode","Lucida Grande","Trebuchet MS",Arial,sans-serif;
+	color: #555555
+}
+
+h1
+{
+    font-family:"Arial";
+    color:orange;
+    text-align:left;
+}
+h2
+{
+    font-family:"Arial";
+    color:Green;
+    text-align:center;
+}
+
+p
+{
+    font-family:"Arial";
+    font-size:16px;
+}
+
+
+
+
+/*====================  PAGE CONTENT ==================== */
+
+#page
+{
+    margin:auto;
+    background-color:Lime;
+    width:885px;
+    height:auto;
+}
+
+
+/*====================   WHOLE PAGE  ====================*/
+
+#wrapper
+{
+    text-align:center; /* for IE */
+    margin:0 auto; /* for the rest */
+    background: transparent url(../images/wrapper.gif) no-repeat scroll center top;
+}
+
+
+#container 
+{
+	background-color:#FFFFFF;
+	margin:0 auto;
+	position:relative;
+	text-align:left;
+    width:917px;	
+}
+
+#content
+{
+    padding: 0 16px;
+}
+

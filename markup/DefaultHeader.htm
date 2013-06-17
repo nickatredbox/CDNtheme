@@ -1,0 +1,122 @@
+﻿<!-----------------------------------------------------
+//
+// Default Lincoln page header	: 
+//
+// Purpose	: 
+//
+//---------------------------------------------------->
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+        <!-------------------------------------------------------
+        //
+        // Stylesheets	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/CDNtheme/styles/header.css" />
+
+        <!-------------------------------------------------------
+        //
+        // Scripts	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        
+        <script type="text/javascript" src="http://localhost:8080/CDNtheme/script/LincolnDefault.js"></script> 
+		<script type="text/javascript" src="http://localhost:8080/CDNtheme/script/LincolnAuth.js"></script> 
+
+        
+        <!-------------------------------------------------------
+        //
+        // Script	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <script type="text/javascript">
+
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function OnLoad() {
+
+            }
+
+        </script>
+
+         
+	</head>
+
+
+
+    
+    <!-- HEADER -->
+	<body onload="OnLoad()">
+
+      
+        <!-- BANNER   -->
+        <div id="banner">
+
+           <div id="lincolnlogo"></div> <div id="lincolnbanner"></div>
+                                
+        </div><!-- BANNER -->
+                                    
+        <!-- CONTROLS -->
+        <div id="controls" >
+                        
+            <!-- SEARCH -->    
+            <form method="get" action="http://www.lincoln.ac.nz/Search/">
+
+                <div id="search">
+
+                    <input id="searchField" type="text" name="query" />
+
+                    <input id="go" type="submit" name="go" value="Search"  class="searchButton" />
+
+                </div>
+
+            </form>
+
+            <!-- INFO FOR -->
+            <form method="get" action="#" onsubmit="return openInfoFor(this)" >
+                            
+                <label for="navLincoln_selectList">Info for:</label>
+
+                <select name="navLincoln_selectList" id="navLincoln_selectList">
+                    <option value="http://www.lincoln.ac.nz/Information-for-current-students/">Current students</option>
+                    <option value="http://www.lincoln.ac.nz/Information-for-new-zealand-students/">New Zealand Students</option>
+                    <option value="http://www.lincoln.ac.nz/Infomation-for-international-students/">International Students</option>
+                    <option value="http://www.lincoln.ac.nz/Postgraduate-students/">Postgraduate students</option>
+                    <option value="http://www.lincoln.ac.nz/Maori-students/">Māori students</option>
+                    <option value="http://www.lincoln.ac.nz/Parents-of-students/">Parents of students</option>
+                    <option value="http://www.lincoln.ac.nz/Lincoln-University-staff/">Lincoln University Staff</option>
+                    <option value="http://www.lincoln.ac.nz/Job-seekers/">Job seekers</option>
+                    <option value="http://www.lincoln.ac.nz/Information-for-employers/">Employers</option>
+                </select>
+
+                <input type="submit" name="goButton" value="Go" id="goButton" class="goButton" />
+       
+                <a href="http://www.lincoln.ac.nz/About-Lincoln-University/Contact-Lincoln-University/">Contact Lincoln</a> <a target="_blank" href="http://www.lincoln.ac.nz/Documents/Glossary.pdf">Glossary</a>
+    
+            </form>
+
+        </div><!-- <div id="controls" > -->
+
+
+	</body>
+
+    
+</html>
+
+                        

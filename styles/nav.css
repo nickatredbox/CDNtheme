@@ -1,0 +1,127 @@
+﻿
+#navframe
+{     
+    scrolling:no;          
+    height:70px;
+    width:892px;
+    marginwidth:0px;
+    marginheight:0px;
+}
+
+#nav
+{
+    margin:auto;
+    background: #4AAA42 url(../images/topNavBack.gif) top left repeat-x;
+    height:60px;
+    font-size: 1em;
+}
+
+#nav ul 
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#nav ul li.first 
+{
+    background: none;
+}
+
+#nav ul li 
+{
+    float: left;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    background: url(../images/navDiv.gif) top left no-repeat;
+    position: relative;
+}
+
+#nav ul li a 
+{
+	width: 110px;
+	color:#000000;
+	display:block;
+	font-size:0.9em;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	margin:0;
+	padding:0;
+	height: 32px;
+	text-align:center;
+	text-decoration:none;
+	font-family:Verdana,sans-serif;
+}
+
+#nav ul li.hover 
+{
+	background: url(../images/topNavHover.gif) top left repeat-x;
+}
+
+#nav .dropMenu2 
+{
+    display:none;
+    position: absolute;
+    background: #EEE;
+    border-right: solid 1px #DDD;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 50px;
+    width: 174px;
+}
+
+#nav .dropMenu2 li 
+{
+    background: url(../images/bg-nav-sub-top.gif) no-repeat 50% bottom;
+    float: none;
+    clear: both;
+    padding: 0;
+    height: 1%;
+    position: static;
+}
+
+ul, menu, dir 
+{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+#nav .dropMenu2 li a 
+{
+	width: 150px;
+	float: none;
+	height: auto;
+	text-align: left;
+	padding: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #555555;
+}
+
+#nav .dropMenu2 li a:hover 
+{
+	background: #4AAA42;
+	color: #000000;
+}
+
+#nav ul li.hover 
+{
+	background: url(../images/topNavHover.gif) top left repeat-x;
+}
+
+#nav ul li.hover .dropMenu2 
+{
+	display: block;
+}

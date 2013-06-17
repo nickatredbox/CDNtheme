@@ -1,0 +1,194 @@
+﻿
+/*====================   HEADER  ====================*/
+
+div 
+{
+    display: block;
+}
+
+div::after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+#header 
+{
+	padding: 0 16px;
+	background:url(../images/bannerRightShade.gif) bottom right no-repeat;
+}
+
+#banner
+{  
+    background-color:Black;
+    width:885px;
+    height: 120px;
+}
+
+
+#header #lincolnlogo 
+{
+	border: 0px;
+    width: 250px;
+    height: 118px;
+    overflow: hidden;
+	float:left;
+	background: #4E4C4E  url(../images/Lincoln_University_logo.png)  top left;
+}
+
+#header #lincolnbanner
+{
+	border: 0px;
+	width:635px; 
+	height: 118px;
+	overflow: hidden;
+	float:left;
+	background: #4E4C4E url(../images/lincolnbanner.jpg)  top left;
+}
+
+#header #bannerImage 
+{
+    width: 635px;
+    height: 118px;
+    overflow: hidden;
+
+	background:url(../images/logo.gif);
+}
+
+#header #controls
+{    
+    clear: both;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    background: #4E4C4E url(../../theme/images/controlsBack.gif) top left repeat-x; 
+    height: 27px;
+    
+
+}
+
+#controls #search #searchField 
+{
+    background-color: white;
+    color: #333;
+    font-size: 1em;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 120px;
+    height: 17px;
+}
+
+#controls #search .searchButton 
+{
+    background: transparent url(../../theme/images/buttonSearch.gif) no-repeat scroll 0 0;
+    width: 64px;
+}
+
+/* the controls in the header */
+#header #controls select
+{
+	color:#555555;
+	font-size:1em;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	vertical-align:middle;
+}
+
+#header #controls label 
+{
+	vertical-align:middle;
+}
+
+#header #controls .goButton, #header #controls .searchButton 
+{
+	border:medium none;
+	color:#333333;
+	cursor:pointer;
+	font-size:1em;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	height:1.6em;
+	line-height: 19px;
+	margin:0;
+	height: 19px;
+	text-align:center;
+	vertical-align:middle;
+	
+}
+
+#header #controls #goButton 
+{
+	background:transparent url(../../theme/images/buttonGo.gif) no-repeat scroll 0 0;
+	margin:0;
+	width: 30px;
+}
+
+
+
+#header #controls  a {
+	color: #ffffff;
+	display: inline;
+	float: none;
+	padding-left: 20px;
+	text-decoration: none;
+	vertical-align: middle;
+	font-size: 11px;
+	line-height: 22px;
+}
+
+#header #controls  a:hover {
+	text-decoration: underline;
+}
+
+#controls #search 
+{
+	float: right;
+}
+
+#controls #search #searchField 
+{
+	background-color:#FFFFFF;
+	color:#333333;
+	font-size:1em;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+	width:120px;
+	height: 17px;
+}
+
+#controls #search .searchButton 
+{
+	background:transparent url(../../theme/images/buttonSearch.gif) no-repeat scroll 0 0;
+	width: 64px;
+}
+
+#content
+{
+    padding: 0 16px;
+}

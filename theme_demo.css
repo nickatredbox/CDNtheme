@@ -1,0 +1,8 @@
+﻿
+.leftcolumn { width: 49%;  float: left; top:inherit}
+.rightcolumn { width: 49%;  float: right; top:inherit}
+
+#theme{ float: left; width:100% }
+#scripts{ float: left; width:100% }
+#markup{ float: left; width:100% }
+#styles{ float: left; width:100% }

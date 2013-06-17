@@ -1,0 +1,659 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+        <!-------------------------------------------------------
+        //
+        // Stylesheets	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+         <link rel="stylesheet" type="text/css" href="http://www2.lincoln.ac.nz/CDNtheme/theme/theme_demo.css" />
+         <link rel="stylesheet" type="text/css" href="http://www2.lincoln.ac.nz/CDNtheme/theme/styles/theme.css" />
+        
+       
+        <!-------------------------------------------------------
+        //
+        // Scripts	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+		<script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnDefault.js"></script> 
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnAuth.js"></script>         
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/json-serialization.js"></script>
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/Cookie-less-Session.js"></script>
+
+        
+        <!-------------------------------------------------------
+        //
+        // PAGE TITLE	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <title>Lincoln Theme Template</title>
+        
+        <!-------------------------------------------------------
+        //
+        // Script	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <script type="text/javascript">
+
+
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formSubmit() {
+                document.getElementById("frm1").submit();
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formReset() {
+                document.getElementById("frm1").reset();
+
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function OnLoad() {
+
+				
+
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function OnEmail() {
+
+				//var emailaddress = document.getElementById("emailaddress").value;
+							
+				//document.getElementById("button-row").innerHTML= "<input id=\"submit\"  type=\"submit\" value=\"Submit\" Submit />";
+
+            }
+
+                        
+        </script>
+         
+	</head>
+
+
+
+    
+    <!-- HEADER -->
+	<body">
+
+        <a name="top"></a>
+        
+        <!-- WRAPPER -->
+	    <div id="wrapper">
+        
+            <!-- CONTAINER -->
+            <div id="container">    
+            
+
+                <!-- LINCOLN HEADER -->
+                <div id="header">
+                                    
+                    <script type="text/javascript">
+                    
+						var str = "";
+ 
+                        str += HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultHeader.htm", "");
+ 
+                        str += HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultNav.htm", "");
+ 
+                        if(str != ""){ document.write(str) };
+						
+                    </script>                         
+                
+                </div><!-- END LINCOLN HEADER -->
+                
+
+                <!-- CONTENT -->
+                <div id="content">
+                
+                     <!-- PAGE -->
+                    <div class="page">
+
+                        <h1>13 ways to define a JavaScript class</h1>
+						
+						<script type="text/javascript">
+						
+							document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/demonav.htm", "") );
+	 
+						</script>                         
+					
+									
+					
+						<h2 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.8em; margin: 30px 0px 0px; color: rgb(51, 51, 51); font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 25.200000762939453px; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(254, 254, 254); ">
+							<a href="http://www.phpied.com/3-ways-to-define-a-javascript-class/" 
+								rel="bookmark" 
+								style="color: rgb(51, 51, 51); text-decoration: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" 
+								title="Permanent Link: 3 ways to define a JavaScript class">3 ways to define 
+							a JavaScript class</a></h2>
+						<div style="color: rgb(51, 51, 51); font-family: 'Lucida Grande', Verdana, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.200000762939453px; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(254, 254, 254); ">
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								Introduction</h3>
+							<p>
+								JavaScript is a very flexible object-oriented language when it comes to syntax. 
+								In this article you can find three ways of defining and instantiating an object. 
+								Even if you have already picked your favorite way of doing it, it helps to know 
+								some alternatives in order to read other people&#39;s code.</p>
+							<p>
+								It&#39;s important to note that there are no classes in JavaScript. Functions can be 
+								used to somewhat simulate classes, but in general JavaScript is a class-less 
+								language. Everything is an object. And when it comes to inheritance, objects 
+								inherit from objects, not classes from classes as in the &quot;class&quot;-ical languages.</p>
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								1. Using a function</h3>
+							<p>
+								This is probably one of the most common ways. You define a normal JavaScript 
+								function and then create an object by using the<span 
+									class="Apple-converted-space">&nbsp;</span><code 
+									style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">new</code><span 
+									class="Apple-converted-space">&nbsp;</span>keyword. To define properties and 
+								methods for an object created using<span class="Apple-converted-space">&nbsp;</span><code 
+									style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">function()</code>, 
+								you use the<span class="Apple-converted-space">&nbsp;</span><code 
+									style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">this</code><span 
+									class="Apple-converted-space">&nbsp;</span>keyword, as seen in the following 
+								example.</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-reserved" style="color: green; ">function</span><span 
+									class="hl-code" style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">Apple</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-brackets" 
+									style="color: olive; ">)</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">red</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-identifier" 
+									style="color: blue; ">getAppleInfo</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-brackets" style="color: olive; ">}</span><span class="hl-code" 
+									style="color: gray; ">
+
+				</span><span class="hl-comment" style="color: orange; ">// anti-pattern! keep reading...</span><span 
+									class="hl-code" style="color: gray; ">
+				</span><span class="hl-reserved" style="color: green; ">function</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">getAppleInfo</span><span class="hl-brackets" 
+									style="color: olive; ">()</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+					</span><span class="hl-reserved" style="color: green; ">return</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> apple</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-brackets" style="color: olive; ">}</span></pre>
+							</div>
+							<p>
+								To instantiate an object using the Apple<span class="Apple-converted-space">&nbsp;</span><em>constructor 
+								function</em>, set some properties and call methods you can do the following:</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-reserved" style="color: green; ">var</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-reserved" 
+									style="color: green; ">new</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">Apple</span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; ">macintosh</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-brackets" 
+									style="color: olive; ">)</span><span class="hl-code" style="color: gray; ">;
+				</span><span class="hl-identifier" style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">reddish</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-identifier" style="color: blue; ">alert</span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-identifier" 
+									style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-brackets" 
+									style="color: olive; ">())</span><span class="hl-code" 
+									style="color: gray; ">;</span></pre>
+							</div>
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								1.1. Methods defined internally</h3>
+							<p>
+								In the example above you see that the method getInfo() of the Apple &quot;class&quot; was 
+								defined in a separate function getAppleInfo(). While this works fine, it has one 
+								drawback – you may end up defining a lot of these functions and they are all in 
+								the &quot;global namespece&quot;. This means you may have naming conflicts if you (or 
+								another library you are using) decide to create another function with the same 
+								name. The way to prevent pollution of the global namespace, you can define your 
+								methods within the constructor function, like this:</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-reserved" style="color: green; ">function</span><span 
+									class="hl-code" style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">Apple</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-brackets" 
+									style="color: olive; ">)</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">red</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-reserved" 
+									style="color: green; ">function</span><span class="hl-brackets" 
+									style="color: olive; ">()</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+						</span><span class="hl-reserved" style="color: green; ">return</span><span 
+									class="hl-code" style="color: gray; "> </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> apple</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-brackets" style="color: olive; ">}</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-brackets" style="color: olive; ">}</span></pre>
+							</div>
+							<p>
+								Using this syntax changes nothing in the way you instantiate the object and use 
+								its properties and methods.</p>
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								1.2. Methods added to the prototype</h3>
+							<p>
+								A drawback of 1.1. is that the method getInfo() is recreated every time you 
+								create a new object. Sometimes that may be what you want, but it&#39;s rare. A more 
+								inexpensive way is to add getInfo() to the<span class="Apple-converted-space">&nbsp;</span><em>prototype</em><span 
+									class="Apple-converted-space">&nbsp;</span>of the constructor function.</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-reserved" style="color: green; ">function</span><span 
+									class="hl-code" style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">Apple</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-brackets" 
+									style="color: olive; ">)</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">red</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-brackets" style="color: olive; ">}</span><span class="hl-code" 
+									style="color: gray; ">
+
+				</span><span class="hl-identifier" style="color: blue; ">Apple</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">prototype</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-reserved" 
+									style="color: green; ">function</span><span class="hl-brackets" 
+									style="color: olive; ">()</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+					</span><span class="hl-reserved" style="color: green; ">return</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> apple</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-brackets" style="color: olive; ">}</span><span class="hl-code" 
+									style="color: gray; ">;</span></pre>
+							</div>
+							<p>
+								Again, you can use the new objects exactly the same way as in 1. and 1.1.</p>
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								2. Using object literals</h3>
+							<p>
+								Literals are shorter way to define objects and arrays in JavaScript. To create 
+								an empty object using you can do:<br />
+								<code style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">
+								var o = {};</code><br />
+								instead of the &quot;normal&quot; way:<br />
+								<code style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">
+								var o = new Object();</code><br />
+								For arrays you can do:<br />
+								<code style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">
+								var a = [];</code><br />
+								instead of:<br />
+								<code style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">
+								var a = new Array();</code><br />
+								So you can skip the class-like stuff and create an instance (object) 
+								immediately. Here&#39;s the same functionality as described in the previous 
+								examples, but using object literal syntax this time:</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-reserved" style="color: green; ">var</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-brackets" 
+									style="color: olive; ">{</span><span class="hl-code" style="color: gray; ">
+					</span><span class="hl-identifier" style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; ">: </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">macintosh</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">,
+					</span><span class="hl-identifier" style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; ">: </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">red</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">,
+					</span><span class="hl-identifier" style="color: blue; ">getInfo</span><span 
+									class="hl-code" style="color: gray; ">: </span><span class="hl-reserved" 
+									style="color: green; ">function</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-brackets" 
+									style="color: olive; ">()</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+						</span><span class="hl-reserved" style="color: green; ">return</span><span 
+									class="hl-code" style="color: gray; "> </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> apple</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-brackets" style="color: olive; ">}</span><span class="hl-code" 
+									style="color: gray; ">
+				</span><span class="hl-brackets" style="color: olive; ">}</span></pre>
+							</div>
+							<p>
+								In this case you don&#39;t need to (and cannot) create an instance of the class, it 
+								already exists. So you simply start using this instance.</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-identifier" style="color: blue; ">apple</span><span 
+									class="hl-code" style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">reddish</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-identifier" style="color: blue; ">alert</span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-identifier" 
+									style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-brackets" 
+									style="color: olive; ">())</span><span class="hl-code" 
+									style="color: gray; ">;</span></pre>
+							</div>
+							<p>
+								Such an object is also sometimes called<span class="Apple-converted-space">&nbsp;</span><em>singleton</em>. 
+								It &quot;classical&quot; languages such as Java,<em>singleton</em><span 
+									class="Apple-converted-space">&nbsp;</span>means that you can have only one 
+								single instance of this class at any time, you cannot create more objects of the 
+								same class. In JavaScript (no classes, remember?) this concept makes no sense 
+								anymore since all objects are singletons to begin with.</p>
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								3. Singleton using a function</h3>
+							<p>
+								Again with the singleton, eh?<span class="Apple-converted-space">&nbsp;</span><img 
+									alt=":)" class="wp-smiley" 
+									src="http://www.phpied.com/wp-includes/images/smilies/icon_smile.gif" 
+									style="padding: 0px; max-width: 100%; " /></p>
+							<p>
+								The third way presented in this article is a combination of the other two you 
+								already saw. You can use a function to define a singleton object. Here&#39;s the 
+								syntax:</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-reserved" style="color: green; ">var</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-identifier" 
+									style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-reserved" 
+									style="color: green; ">new</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-reserved" 
+									style="color: green; ">function</span><span class="hl-brackets" 
+									style="color: olive; ">()</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">macintosh</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">red</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-reserved" style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-reserved" 
+									style="color: green; ">function</span><span class="hl-code" 
+									style="color: gray; "> </span><span class="hl-brackets" 
+									style="color: olive; ">()</span><span class="hl-code" style="color: gray; "> </span><span 
+									class="hl-brackets" style="color: olive; ">{</span><span class="hl-code" 
+									style="color: gray; ">
+						</span><span class="hl-reserved" style="color: green; ">return</span><span 
+									class="hl-code" style="color: gray; "> </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-reserved" 
+									style="color: green; ">this</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">type</span><span class="hl-code" 
+									style="color: gray; "> + </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-string" 
+									style="color: red; "> apple</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&#39;</span><span class="hl-code" 
+									style="color: gray; ">;
+					</span><span class="hl-brackets" style="color: olive; ">}</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-brackets" style="color: olive; ">}</span></pre>
+							</div>
+							<p>
+								So you see that this is very similar to 1.1. discussed above, but the way to use 
+								the object is exactly like in 2.</p>
+							<div class="hl-main" style="background-color: rgb(211, 211, 211); ">
+								<pre style="font-size: 10pt; background-color: rgb(248, 248, 248); background-position: initial initial; background-repeat: initial initial; "><span 
+									class="hl-identifier" style="color: blue; ">apple</span><span 
+									class="hl-code" style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">color</span><span class="hl-code" 
+									style="color: gray; "> = </span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-string" 
+									style="color: red; ">reddish</span><span class="hl-quotes" 
+									style="color: rgb(139, 0, 0); ">&quot;</span><span class="hl-code" 
+									style="color: gray; ">;
+				</span><span class="hl-identifier" style="color: blue; ">alert</span><span class="hl-brackets" 
+									style="color: olive; ">(</span><span class="hl-identifier" 
+									style="color: blue; ">apple</span><span class="hl-code" 
+									style="color: gray; ">.</span><span class="hl-identifier" 
+									style="color: blue; ">getInfo</span><span class="hl-brackets" 
+									style="color: olive; ">())</span><span class="hl-code" 
+									style="color: gray; ">;</span></pre>
+							</div>
+							<p>
+								<code style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">
+								new function(){...}</code><span class="Apple-converted-space">&nbsp;</span>does two 
+								things at the same time: define a function (an anonymous constructor function) 
+								and invoke it with<span class="Apple-converted-space">&nbsp;</span><code 
+									style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 1.1em; line-height: normal; font-family: 'Courier New', Courier, Fixed; ">new</code>. 
+								It might look a bit confusing if you&#39;re not used to it and it&#39;s not too common, 
+								but hey, it&#39;s an option, when you really want a constructor function that you&#39;ll 
+								use only once and there&#39;s no sense of giving it a name.</p>
+							<h3 style="font-family: Consolas, 'Courier New'; font-weight: bold; font-size: 1.6em; padding: 0px; margin: 30px 0px 0px; ">
+								Summary</h3>
+							<p>
+								You saw three (plus one) ways of creating objects in JavaScript. Remember that 
+								(despite the article&#39;s title) there&#39;s no such thing as a class in JavaScript. 
+								Looking forward to start coding using the new knowledge? Happy JavaScript-ing!</p>
+							<p class="alt" 
+								style="background-color: rgb(248, 248, 248); border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); margin: 0px; padding: 10px; ">
+								This entry was posted on Friday, September 29th, 2006 and is filed under<span 
+									class="Apple-converted-space">&nbsp;</span><a 
+									href="http://www.phpied.com/category/javascript/" rel="category tag" 
+									style="color: rgb(57, 128, 192); text-decoration: none; " 
+									title="View all posts in JavaScript">JavaScript</a>. You can follow any 
+								responses to this entry through the<span class="Apple-converted-space">&nbsp;</span><a 
+									href="http://www.phpied.com/3-ways-to-define-a-javascript-class/feed/" 
+									style="color: rgb(57, 128, 192); text-decoration: none; ">RSS 2.0</a><span 
+									class="Apple-converted-space">&nbsp;</span>feed. You can<span 
+									class="Apple-converted-space">&nbsp;</span><a 
+									href="http://www.phpied.com/3-ways-to-define-a-javascript-class/#respond" 
+									style="color: rgb(57, 128, 192); text-decoration: none; ">leave a response</a>, 
+								or<span class="Apple-converted-space">&nbsp;</span><a 
+									href="http://www.phpied.com/3-ways-to-define-a-javascript-class/trackback/" 
+									rel="trackback" style="color: rgb(57, 128, 192); text-decoration: none; ">trackback</a><span 
+									class="Apple-converted-space">&nbsp;</span>from your own site.</p>
+						</div>
+						
+	                   </div><!-- PAGE -->
+                    
+                </div><!-- CONTENT -->
+
+
+                <!-- LINCOLN FOOTER -->
+                <script type="text/javascript">
+                    document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultFooter.htm", ""));
+					//document.getElementById("button-row").innerHTML="Please enter an email address to enable submit button";
+                </script>
+                   
+            </div><!-- CONTAINER -->
+                                             
+        </div><!-- WRAPPER -->
+    
+	</body>
+    
+</html>

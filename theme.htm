@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+       
+        <!-------------------------------------------------------
+        //
+        // Stylesheets	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+         <link rel="stylesheet" type="text/css" href="../CDNtheme/styles/theme_demo.css" />
+         <link rel="stylesheet" type="text/css" href="../CDNtheme/styles/theme.css" />
+        
+       
+        <!-------------------------------------------------------
+        //
+        // Scripts	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+		<script type="text/javascript" src="../CDNtheme/script/LincolnDefault.js"></script> 
+        <script type="text/javascript" src="../CDNtheme/script/LincolnAuth.js"></script>         
+        <script type="text/javascript" src="../CDNtheme/script/json-serialization.js"></script>
+        <script type="text/javascript" src="../CDNtheme/script/Cookie-less-Session.js"></script>
+
+        
+        <!-------------------------------------------------------
+        //
+        // PAGE TITLE	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <title>Lincoln Theme Template</title>
+        
+        <!-------------------------------------------------------
+        //
+        // Script	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <script type="text/javascript">
+
+			var query_string = [];
+			
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formSubmit() {
+                document.getElementById("frm1").submit();
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formReset() {
+                document.getElementById("frm1").reset();
+
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function BodyLoad() {
+
+				query_string = QueryString();
+
+            }
+
+                        
+        </script>
+         
+	</head>
+
+
+
+    
+    <!-- HEADER -->
+	<body onload="BodyLoad();">
+
+        <a name="top"></a>
+        
+        <!-- WRAPPER -->
+	    <div id="wrapper">
+        
+            <!-- CONTAINER -->
+            <div id="container">    
+            
+
+                <!-- LINCOLN HEADER -->
+                <div id="header">
+                                    
+                    <script type="text/javascript">
+				
+						if(query_string.embed != 'true'){
+						
+							var str = "";
+	 
+							str += HTTPhelper.GetPartial("../CDNtheme/markup/DefaultHeader.htm", "");
+	 
+							str += HTTPhelper.GetPartial("../CDNtheme/markup/DefaultNav.htm", "");
+	 
+							if(str != ""){ document.write(str) };
+						}
+											
+                    </script>                         
+                
+                </div><!-- END LINCOLN HEADER -->
+                
+
+                <!-- CONTENT -->
+                <div id="content">
+                
+                     <!-- PAGE -->
+                    <div class="page">
+
+
+
+                        <h1>Lincoln Themed Page</h1>
+
+                        <p>This is an example of a web page which is based on the Lincoln theme current in August 2012</p>
+                        <p>This theme has been tested in IE8, Chrome & Firefox 12.0</p> 
+							
+						<script type="text/javascript">
+						
+							document.write(HTTPhelper.GetPartial("../CDNtheme/demonav.htm", "") );
+	 
+						</script>                         
+					
+						<div id="feestable"></div>
+				
+						<p/>
+                        <div id="theme">
+
+                            <h3>The Theme Folder</h3>
+
+                            <p>Here is the folder structure under which all the objects used in this template are located</p>
+
+                            <p>
+                            <img src="theme_folder.png" alt="Lincoln Theme"/>
+                            </p>
+
+                            <p>All the content and functionality you can see on this page is contained in this structure.
+                            This page can be used as a templete for generating content in a standard theme.</p>
+                            <p>Conten specifically used in this template and not required for use of the theme is located in the root of
+                            theme. This includes images and markup pages like this one.</p>
+                            </div>
+
+                            <div>
+                            <h3>The Images Folder</h3>
+                        
+                            <p>All the images used in the theme are in this location</p>
+
+                            <p>
+                            <img src="images_folder.png" alt="Lincoln Theme"/>
+                            </p>
+
+                        </div>
+
+    
+                        <div id="markup">
+
+                            <h3>The Markup Folder</h3>
+                        
+                            <p>The markup folder contains the following files, These files are partial HTML pages containing relevent 
+                            markup for the specific area of the page as well as references to any style sheets required</p>
+
+                            <p>
+                            <img src="markup_folder.png" alt="Lincoln Theme"/>
+                            </p>
+
+                        </div>
+
+
+                        <div id="scripts">
+
+                            <h3>The Scripts Folder</h3>
+
+                            <p>The Javascript is located in the script folder. Patrial pages like DefualtNav.htm are delivered to the containg page using the Javascript in this folder.</p>
+                        
+                            <div class="leftcolumn">
+                                <p><img src="java_usage.png" alt="Lincoln Theme"/></p>
+                            </div>
+
+                            <div class="rightcolumn">
+                                <p>The Javascript in LincolnDefault.js is used to fetch the content in the partial pages and render them inside the container page.</p>                              
+                            </div>
+
+                        </div>
+                   
+
+
+                        <div id="styles">
+                        
+                            <h3>The Styles Folder</h3>
+
+                            <p>The styles folder has all the CSS files needed for the theme divided into seperate files, each concerned with a specific part of the page or partial page.</p>
+                            
+                            <div class="leftcolumn">
+
+                                <p><img src="styles_folder.png" style="width:50%" alt="Lincoln Theme"/></p>
+                                <p>DefaultNav.htm shown below shows how the style sheet nav.css is used</p>
+                                <p><img src="style_usage.png" style="width:100%" alt="Lincoln Theme"/></p>
+
+                            </div>
+
+                            <div class="rightcolumn">
+
+                                <p>header.css contatins all styles for DefaultHeader.htm</p>
+                                <p>nav.css contatins all styles for DefaultNav.htm</p>
+                                <p>footer.css contatins all styles for DefaultFooter.htm</p>
+                                <p>page.css contatins all styles for this page and should be included into any page which utilizes this theme</p>
+                                <p><img src="theme_css.png" alt="Lincoln Theme"/> </p>
+                                <p>theme.css simply contains a list of includes so only theme.css is required to be linked to your page when using the template
+                                <img src="include_theme_css.png" style="width:96%" alt="Lincoln Theme"/></p>  
+                                <p>Note: it should be noted that the relative parts shown in this demo will need to be modified to refelct the directory structure
+                                of your deployment. So to link to theme.css will be </p>
+                                <img src="include_theme_css2.png" style="width:96%" alt="Lincoln Theme"/>
+                                <p>assuming the folder theme is located on the root of your site.</p>
+
+                            </div>
+                        
+                        </div>
+
+
+
+                    </div><!-- PAGE -->
+                    
+               </div><!-- CONTENT -->
+
+
+                <!-- LINCOLN FOOTER -->
+                <script type="text/javascript">
+					if(query_string.embed != 'true'){
+						document.write(HTTPhelper.GetPartial("../CDNtheme/markup/DefaultFooter.htm", ""));
+					}
+                </script>
+                   
+            </div><!-- CONTAINER -->
+                                             
+        </div><!-- WRAPPER -->
+    
+	</body>
+    
+</html>

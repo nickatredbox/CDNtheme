@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+        <!-------------------------------------------------------
+        //
+        // Stylesheets	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+         <link rel="stylesheet" type="text/css" href="https://myrecord.lincoln.ac.nz/theme/theme_demo.css" />
+         <link rel="stylesheet" type="text/css" href="https://myrecord.lincoln.ac.nz/theme/styles/theme.css" />
+        
+       
+        <!-------------------------------------------------------
+        //
+        // Scripts	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+		<script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnDefault.js"></script> 
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnAuth.js"></script>         
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/json-serialization.js"></script>
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/Cookie-less-Session.js"></script>
+		<script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/partials/script/misc.js"></script>
+
+        
+        <!-------------------------------------------------------
+        //
+        // PAGE TITLE	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <title>Lincoln Theme Template</title>
+        
+        <!-------------------------------------------------------
+        //
+        // Script	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <script type="text/javascript">
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formSubmit() {
+                document.getElementById("frm1").submit();
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formReset() {
+                document.getElementById("frm1").reset();
+
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function OnLoad() {
+
+
+
+            }
+
+            
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function ShowDoc(doc, control) {
+
+                HTTPhelper.GetPartial(doc, control);
+            }
+
+                        
+        </script>
+         
+	</head>
+
+
+
+    
+    <!-- HEADER -->
+	<body onload="OnLoad()">
+
+        <a name="top"></a>
+        
+        <!-- WRAPPER -->
+	    <div id="wrapper">
+        
+            <!-- CONTAINER -->
+            <div id="container">    
+            
+
+                <!-- LINCOLN HEADER -->
+                <div id="header">
+                                    
+                    <script type="text/javascript">
+                    
+                        // LINCOLN HEADER BAR
+                        document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultHeader.htm", ""));
+                                                  
+                        // LINCOLN NAV BAR
+                        document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultNav.htm", ""));
+						
+                    </script>                         
+                
+                </div><!-- END LINCOLN HEADER -->
+                
+
+                <!-- CONTENT -->
+                <div id="content">
+                
+                     <!-- PAGE -->
+                    <div class="page">
+
+
+
+                        <h1>Lincoln Themed Page</h1>
+
+                        <p>This is an example of a web page which is based on the Lincoln theme current in August 2012</p>
+                        <p>This theme has been tested in IE8, Chrome & Firefox 12.0</p> 
+
+						<div id="buttons" style="margin:0px;background: #4AAA42 url(../../theme/images/topNavBack.gif) top left repeat-x;height:50px">
+
+							<div style="margin-left: 10px;padding-top: 6px;">
+								<a href="http://www2.lincoln.ac.nz/CDNtheme/theme/theme.htm">Back To Theme</a>
+								<a href="http://www2.lincoln.ac.nz/CDNtheme/theme/balls.htm">HTML5 Demo</a>
+								<a href="http://www2.lincoln.ac.nz/CDNtheme/theme/quiz.htm">Python Demo</a>
+								<a href="http://www2.lincoln.ac.nz/CDNtheme/theme/12things.htm">12 Things</a>
+								<a href="http://www2.lincoln.ac.nz/CDNtheme/theme/Javaclasses.htm">Java Classes</a>
+							</div>
+
+							<!-- AJAX THE CONTENT -->
+							<div style="margin-left: 4px;padding-top: 2px;">
+								<input type="button" onclick="ShowDoc('partials/theme.htm', 'partial')" value="Theme" />
+								<input type="button" onclick="ShowDoc('partials/religon.htm', 'partial')" value="Religon" />								
+								<input type="button" onclick="ShowDoc('partials/zombie.htm', 'partial')" value="Zombie" />								
+								<input type="button" onclick="ShowDoc('partials/rapture.htm', 'partial')" value="Rapture" />								
+								<input type="button" onclick="ShowDoc('partials/US_POLICY.htm', 'partial')" value="Policy" />								
+								<input type="button" onclick="ShowDoc('partials/ubuntu.htm', 'partial')" value="Ubuntu" />								
+							</div>
+						
+						</div>
+						<br />
+						<!-- PUT THE AJAX CONTENT HERE -->
+						<div id="partial"></div>
+							
+                    </div><!-- PAGE -->
+                    
+               </div><!-- CONTENT -->
+
+
+                <!-- LINCOLN FOOTER -->
+                <script type="text/javascript">
+                    document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultFooter.htm", ""));
+                </script>
+                   
+            </div><!-- CONTAINER -->
+                                             
+        </div><!-- WRAPPER -->
+    
+	</body>
+    
+</html>

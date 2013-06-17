@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+        <!-------------------------------------------------------
+        //
+        // Stylesheets	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <link rel="stylesheet" type="text/css" href="http://www2.lincoln.ac.nz/CDNtheme/main.css" />
+        <link rel="stylesheet" type="text/css" href="http://www2.lincoln.ac.nz/CDNtheme/theme/styles/theme.css" />
+        
+       
+        <!-------------------------------------------------------
+        //
+        // Scripts	: standard
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/json-serialization.js"></script>
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/Cookie-less-Session.js"></script> 
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnDefault.js"></script> 
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnAuth.js"></script> 
+
+        
+        <!-------------------------------------------------------
+        //
+        // Scripts	: for this app
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+		<script type="text/javascript">
+		
+		 var fblikepart="";
+		
+		</script> 
+
+        
+        <!-------------------------------------------------------
+        //
+        // PAGE TITLE	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <title>Telford Weather Station</title>
+
+
+    </head>
+
+    
+    <!-- HEADER -->
+	<body onload="OnLoad()">
+
+        <!-- AUTHENTICATION -->
+        <script type="text/javascript">
+
+
+            //LincolnAuth.DoAuth("theme/markup/authenticate.htm", "https://myrecord.lincoln.ac.nz//default.htm", "https://myrecord.lincoln.ac.nz//theme/markup/authenticate.htm");
+
+            //alert(COOKIEhelper.getCookie("AUTH"));
+
+            //alert("Session.dump() " + Session.dump() );
+
+        </script>
+
+
+        <a name="top"></a>
+        
+        <!-- WRAPPER -->
+	    <div id="wrapper">
+        
+            <!-- CONTAINER -->
+            <div id="container">    
+            
+                <!-- LINCOLN HEADER -->
+                <div id="header">
+                                    
+                    <script type="text/javascript">
+
+						var str = "";
+ 
+                        str += HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultHeader.htm", "");
+ 
+                        str += HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultNav.htm", "");
+ 
+                        if(str != ""){ document.write(str) };
+						
+					    
+                                              
+                    </script> 
+                       
+                </div><!-- END LINCOLN HEADER -->
+                
+
+                <!-- CONTENT -->
+                <div id="content">
+                
+                    <div class="page">
+					
+					    <h1>Facebook Like for Telford Weather Station</h1>
+						
+						<script type="text/javascript">
+						
+							document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/demonav.htm", "") );
+	 
+						</script>                         
+					
+					
+						<a href="http://www.telford.ac.nz/About-Telford/Weather/">Working in EPIserver</a>
+						
+						<p/>
+						
+						<!--<div id="fblike"></div>-->
+						
+						
+						<iframe src="http://www2.lincoln.ac.nz/facebook-artifacts/im-off-to-lunz.htm" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:280px;"> </iframe>
+
+						<iframe src="http://www2.lincoln.ac.nz/facebook-artifacts/ive-applied-to-lunz.htm" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:280px;"> </iframe>
+
+						
+												
+						<iframe height="540" src="http://kiwitricopter.blogspot.co.nz" frameborder="0" width="850"></iframe>
+						
+						<iframe src="http://www.facebook.com/plugins/like.php?href=http://kiwitricopter.blogspot.co.nz&layout=standard&show_faces=true&width=450&action=like&colorscheme=light" scrolling="no" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:450px; height:20px;"> </iframe>
+											
+			
+                    </div><!-- PAGE -->
+
+                    </div><!-- CONTENT -->
+
+                    <!-- LINCOLN FOOTER -->
+                    <script type="text/javascript">
+
+                       document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultFooter.htm", ""));
+						
+					   //HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/facebook.htm", "fblike");
+
+                    </script>                   
+
+                </div><!-- CONTAINER -->
+                                             
+             </div><!-- WRAPPER -->
+    
+	</body>
+        
+</html>

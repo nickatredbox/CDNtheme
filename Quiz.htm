@@ -1,0 +1,981 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+      
+        <!-------------------------------------------------------
+        //
+        // Stylesheets	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+         <link rel="stylesheet" type="text/css" href="http://www2.lincoln.ac.nz/CDNtheme/theme/theme_demo.css" />
+         <link rel="stylesheet" type="text/css" href="http://www2.lincoln.ac.nz/CDNtheme/theme/styles/theme.css" />
+        
+       
+        <!-------------------------------------------------------
+        //
+        // Scripts	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+		<script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnDefault.js"></script> 
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/LincolnAuth.js"></script>         
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/json-serialization.js"></script>
+        <script type="text/javascript" src="http://www2.lincoln.ac.nz/CDNtheme/theme/script/Cookie-less-Session.js"></script>
+
+        
+        <!-------------------------------------------------------
+        //
+        // PAGE TITLE	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <title>Lincoln Theme Template</title>
+        
+        <!-------------------------------------------------------
+        //
+        // Script	: 
+        //
+        // Purpose	: 
+        //
+        //------------------------------------------------------->
+        <script type="text/javascript">
+
+
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formSubmit() {
+                document.getElementById("frm1").submit();
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function formReset() {
+                document.getElementById("frm1").reset();
+
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function OnLoad() {
+
+				
+
+            }
+
+            //-----------------------------------------------------
+            //
+            // Function	: 
+            //
+            // Purpose	: 
+            //
+            //-----------------------------------------------------
+            function OnEmail() {
+
+				//var emailaddress = document.getElementById("emailaddress").value;
+							
+				//document.getElementById("button-row").innerHTML= "<input id=\"submit\"  type=\"submit\" value=\"Submit\" Submit />";
+
+            }
+
+                        
+        </script>
+         
+	</head>
+
+
+
+    
+    <!-- HEADER -->
+	<body">
+
+        <a name="top"></a>
+        
+        <!-- WRAPPER -->
+	    <div id="wrapper">
+        
+            <!-- CONTAINER -->
+            <div id="container">    
+            
+
+                <!-- LINCOLN HEADER -->
+                <div id="header">
+                                    
+                    <script type="text/javascript">
+                    
+						var str = "";
+ 
+                        str += HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultHeader.htm", "");
+ 
+                        str += HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultNav.htm", "");
+ 
+                        if(str != ""){ document.write(str) };
+						
+                    </script>                         
+                
+                </div><!-- END LINCOLN HEADER -->
+                
+
+                <!-- CONTENT -->
+                <div id="content">
+                
+                     <!-- PAGE -->
+                    <div class="page">
+
+                        <h1>Python Quiz</h1>
+						
+						
+						<script type="text/javascript">
+						
+							document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/demonav.htm", "") );
+	 
+						</script>                         
+					
+
+							<form id="QuizForm" 
+							onload="OnLoad()"
+							action="quiz_submit.asp" 
+							method="post" name="recordForm" 
+							style="margin: 0px; padding: 0px; ">
+							
+							<div id="tabbody1" class="box" 
+								style="margin: 0px; padding: 0px; display: block; min-height: 100px; color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; font-size: 11.111111640930176px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 15.555556297302246px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; ">
+								<div id="addRecordDiv" style="margin: 0px; padding: 0px; ">
+									
+									<table style="margin: 0px; padding: 0px; width: 885px; text-align: left; ">
+										<tbody style="margin: 0px; padding: 0px; ">
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px; font-size: 12px; ">
+													<h1 style="margin: 0px 0px 0px 10px; padding: 5px 0px 0px; color: rgb(0, 135, 229); font-size: 15px; ">
+														Monty Python Questionare</h1>
+												</td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px; font-size: 12px; ">
+													<div style="margin: 0px; padding: 0px; ">
+												    Please enter your ermail address <input name="emailaddress" type="text" value="your.name" onkeyup="OnEmail()"/>@lincoln.ac.nz
+													</div>
+													<div style="margin: 0px; padding: 0px; ">
+														&nbsp;</div>
+													<div style="margin: 0px; padding: 0px; ">
+														This questionare is intended to determine how much you know about Monty Python.</div>
+																
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<p></p>
+
+									
+									<table cellspacing="0" class="alternative-color" 
+										style="margin: 0px 0px 15px 17px; padding: 0px; width: 808.888916015625px; text-align: left; ">
+										<tbody style="margin: 0px; padding: 0px; ">
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														1</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the file Hoy Grail what is the name of the head virgin in the castle with the 
+														grail shaped beacon?</div>
+													<div style="margin: 0px; padding: 0px; ">
+														&nbsp;</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[0]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														2</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the life of Brian what is Brians&#39;s mums name?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[1]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														3</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the Holy Grail who is the enchanter?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[2]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														4</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the life of Brian what is special about the chesse makers?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[3]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														5</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the meaning of life what is the name of the company in the supporting 
+														feature?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[4]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														6</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In The Life Of Brian what is the nationality of Brian&#39;s girlfriend?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[5]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														7</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In The Holy Grail what shall be the the number of the counting?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[6]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														8</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the Meaning Of Life what is the name of the fat man in the resturant who 
+														explodes?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[7]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														9</div>
+													<div style="margin: 0px; padding: 0px; ">
+														In the Meaning Of Life what food causes the fat man in the resturant to explode?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[8]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														10</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail what animal does Terry Jones leave at the gates of the&nbsp;</span>besieged 
+														castle?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[9]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														11</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the meaning of life which internal organ is&nbsp;</span>begrudgingly&nbsp;<span 
+															style="margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); line-height: 16px; text-align: left; ">donated 
+														by Terry Gilliam?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[10]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														12</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the meaning of life what is much bigger than a virus and has made off with 
+														Eric Idles leg?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[11]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														13</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the meaning of life which animal is found in Africa and should not be there?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[12]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														14</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail what punishment do the 19 year old virgins recommend they all 
+														suffer?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[13]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														15</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian what is the name of the terroist&nbsp;</span>organisation<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;Brian 
+														belongs to?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[14]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														16</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian what excuse does John Clease&#39;s&nbsp;</span>character Reg give so 
+														as not to take part in any terrorist activity.<span 
+															style="margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); line-height: 16px; text-align: left; ">&nbsp;</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[15]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														17</div>
+													<div style="margin: 0px; padding: 0px; ">
+														What is the English translation of the Latin graffiti Brian daubs on Pilots 
+														palace walls before John Clease corrects his Latin?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[16]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														18</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail how old is the peasant Michael Palin plays?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[17]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														19</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian what&nbsp;</span>arbitrary<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;</span>quantity<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;unit 
+														of a commodity has Terry Gilliam got round the back?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[18]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														20</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian what terrorist organisation does the crack suicide squad 
+														belong to?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[19]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														21</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian what does Jesus say about the chess makers?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[20]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														22</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian how many years has Terry Jones not uttered a single&nbsp;</span>intelligible<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;utterance?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[21]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														23</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail name a taunt the French apply to King Athur&#39;s Knights when 
+														that threaten to take their castle by force?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[22]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														24</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail what&nbsp;</span>vegetable<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;had 
+														been attached to the woman accused of witchcraft</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[23]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														25</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian which actor / comedian had a practically cameo part 
+														uttering only a single&nbsp;</span>sentence?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[24]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														26</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail what was Sir Robins defining&nbsp;</span>characteristic<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[25]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														27</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail what was used instead of horses?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[26]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														28</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Life Of Brian what sort of bush did Brian&#39;s followers believe he had made 
+														fruitful by his word?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[27]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														29</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the Meaning Of Life which actor played the doctor who examined Eric Idle&#39;s 
+														missing leg?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[28]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														30</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the Meaning Of Life what type of fish pate poisoned the people at the dinner 
+														party?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[29]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														31</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the supporting feature for the Meaning Of Life what had the marketing 
+														department of the &quot;Very Big Corporation of America&quot; determined Americans&nbsp;</span>weren&#39;t<span 
+															style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;wearing 
+														enough of?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[30]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														32</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what colour was the spaceship?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[31]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														33</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what shall a man loose that belongs to his&nbsp;</span>neighbour?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[32]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														34</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the supporting feature for the Meaning Of Life what theory about the shape of 
+														the Earth proved in accurate?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[33]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														35</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 16px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what was &nbsp;Brian&#39;s given as much of as she could eat of by 
+														the Romans?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[34]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														36</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what was &nbsp;Brian&#39;s Roman fathers name?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[35]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														37</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what class of individual did John Clease claim Brian 
+														belonged to, as he followed a few?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[36]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														38</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the Meaning Of Life how fast does Eric Idle claim in song the Earth is 
+														orbiting the sun?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[37]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														39</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In&nbsp;</span>Now for Something Completely Different what show is Simon Zinc Trumpet 
+														Harris competing in?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[38]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														40</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In&nbsp;Now for Something Completely Different which actor is arguing in his spare 
+														time?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[39]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														41</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In&nbsp;Now for Something Completely Different what is the key to not being seen?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[40]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														42</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In&nbsp;Now for Something Completely Different which character is like around the 
+														middle of the earth but with a L?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[41]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														43</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In&nbsp;Now for Something Completely Different what does Michael Palin want on his 
+														hat in Neon letters?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[42]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														44</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In&nbsp;Now for Something Completely Different which tree spiecies is repeatedly 
+														mentioned?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[43]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														45</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; font-size: 11.111111640930176px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what piece of cutlery does one of John Clease&#39;s soldiers 
+														find on a second search of&nbsp;</span>Mathias&#39;s house?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[44]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														46</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what method of execution does&nbsp;</span><span 
+															style="margin: 0px; padding: 0px; background-color: rgb(255, 255, 255); line-height: 16px; text-align: left; ">Mathias 
+														claim is a dodle?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[45]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														47</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian what group of people is Gwen Taylor glad for as they have a 
+														hell of a time?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[46]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														48</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; font-size: 11px; line-height: 15px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian how many swords does the Irish prophet say will be with a 
+														main character in the&nbsp;</span>appocalypse?</div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[47]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														49</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 14.44444465637207px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In the life of Brian which actor tell Brian he is a proper little jailors pet?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[48]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+											<tr style="margin: 0px; padding: 0px; ">
+												<td style="margin: 0px; padding: 10px 10px 10px 20px; font-size: 11px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239); vertical-align: top; background-image: url(http://v-lams:8080/lams/images/css/greyfade_bg.jpg); background-position: 3px 0px; background-repeat: repeat no-repeat;">
+													<div class="bigNumber" 
+														style="margin: 0px; padding: 5px 0px 0px; font-weight: bold; font-size: larger; ">
+														50</div>
+													<div style="margin: 0px; padding: 0px; ">
+														<span style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">
+														In The Holy Grail what animal is claimed to be&nbsp;</span>vicious<span 
+															style="margin: 0px; padding: 0px; line-height: 15.555556297302246px; text-align: left; background-color: rgb(255, 255, 255); ">&nbsp;beyond 
+														imagination at the end of the film?</span></div>
+													<div class="hint" style="margin: 0px; padding: 0px; font-style: italic; ">
+														Enter a single line of text</div>
+													<input name="answer[49]" size="60" 
+														style="margin: 6px 0px 0px; padding: 2px; border: 1px solid rgb(193, 193, 193); " 
+														type="text" value="" /></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="button-add-div" style="margin: 0px; padding: 0px 0px 0px 30px; ">
+
+										<div id="button-table" class="space-bottom-top" 
+
+											style="margin: 0px; padding: 20px 20px 20px 0px; ">
+											
+											<div id="button-row" style="margin: 0px; padding: 0px; ">
+												
+												<!--
+												<a class="button-add-item" 
+													href="courses.htm" 
+													onclick="saveOrUpdateQuiz()" 
+													style="margin: 0px; padding: 5px 15px 6px 25px; color: rgb(51, 51, 51); border: 0px none; text-decoration: none; 
+													background-image: url(btn_add_off.gif); font-size: 11px; background-position: 0px 0px; background-repeat: no-repeat no-repeat;">Submit</a>
+												-->
+												<input id="submit"  type="submit" value="Submit" Submit />
+												
+											</div>
+
+										</div>
+									</div>
+
+									</form>
+								</div>
+							</div>
+							<br class="Apple-interchange-newline" />
+	
+
+                    </div><!-- PAGE -->
+                    
+                </div><!-- CONTENT -->
+
+
+                <!-- LINCOLN FOOTER -->
+                <script type="text/javascript">
+                    document.write(HTTPhelper.GetPartial("http://www2.lincoln.ac.nz/CDNtheme/theme/markup/DefaultFooter.htm", ""));
+					//document.getElementById("button-row").innerHTML="Please enter an email address to enable submit button";
+                </script>
+                   
+            </div><!-- CONTAINER -->
+                                             
+        </div><!-- WRAPPER -->
+    
+	</body>
+    
+</html>

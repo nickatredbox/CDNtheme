@@ -1,0 +1,44 @@
+﻿
+    //MAKE KEY PAIR DEBUG
+    //key = new RSAKeyPair("10001", "8064edb1f26944f6bec2b68789db7ffd08b074d0953b76feca71dc8265c60e1", "2687f5ac6c70f9cab32fcbded7059502f4c7cc95fc3e09a560c68975ac4bf5e3");
+    //key = new RSAKeyPair("10001", "12e8da920d4599458e84ec5ef1656161807f427d05eb79182b7418259d6f6c14364d1f5caf9130c8d9d9d6ea71d1bdbc87781a46a16bcb9e672814fed3b9c96ddffe0a1b0955ae68055c8f92fef518a04fc32a2ea8390e617cc5556a251f9ae9eee70a32e579cb3e9f298848a9b3aaf634f5930ffbf74473f7cb6c0cefee1751", "130ebebd67b16a9ab2c53a437badbf8f01a80c750095a7fcfe95742c3d5ed1abb318babc5cb5d9350fee4da65ee074f65e1758117e6945f0fcfc8137528053ce9d1da8618890dee24e5e0bf8c87795bb1d09eddd544640824ee0dd0ea9fd908d27b0f8a1ae5c37f3647fbf2f5795500ad76c195b3387d0458a8f51b701472301");
+
+    //var m = biToString(key.m, key.radix);
+    //var e = biToString(key.e, key.radix);
+    //var d = biToString(key.d, key.radix);
+
+    //document.writeln('<p>key.m: ' + m + '</p>');
+    //document.writeln('<p>key.e: ' + e + '</p>');
+    //document.writeln('<p>key.d: ' + d + '</p>');
+
+    //var lencp = encryptedString(key, pass);
+
+    //document.write('<p>Enc key: ' + lencp + '</p>');
+
+    //alert('post now');
+    //var decp = decryptedString(key, encp);
+
+    //document.write('<p>Dec: ' + decp + '</p>');
+
+    /*
+    with (document.frm) {
+    txtMessages.value = "Encrypting. Please wait...";
+    txtCiphertext.value = "";
+    txtVerification.value = "";
+
+    var t1 = new Date().getTime(); 
+    txtCiphertext.value = encryptedString(key, txtPlaintext.value); 
+    var t2 = new Date().getTime(); 
+    txtMessages.value = "Done. Encryption took " + (t2 - t1) + " milliseconds."; 
+    } 
+    */
+    /*
+    with (document.frm) { 
+    txtMessages.value = "Decrypting. Please wait..."; 
+    txtVerification.value = ""; 
+    var t1 = new Date().getTime(); 
+    txtVerification.value = decryptedString(key, txtCiphertext.value); 
+    var t2 = new Date().getTime();
+    txtMessages.value = "Done. Decryption took " + (t2 - t1) + " milliseconds."; 
+    } 
+    */
